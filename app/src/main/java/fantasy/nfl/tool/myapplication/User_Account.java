@@ -273,7 +273,7 @@ public class User_Account extends AppCompatActivity {
     public void rb1(View view){
         Intent intent = new Intent(User_Account.this, Players.class);
         Bundle b = new Bundle();
-        b.putInt("Position", 2);
+        b.putInt("Position", 1);
         b.putInt("ActivityIdentity", 101);
         intent.putExtras(b);
         startActivityForResult(intent, 2);
@@ -282,7 +282,7 @@ public class User_Account extends AppCompatActivity {
     public void wr0(View view){
         Intent intent = new Intent(User_Account.this, Players.class);
         Bundle b = new Bundle();
-        b.putInt("Position", 3);
+        b.putInt("Position", 2);
         b.putInt("ActivityIdentity", 101);
         intent.putExtras(b);
         startActivityForResult(intent, 3);
@@ -291,7 +291,7 @@ public class User_Account extends AppCompatActivity {
     public void wr1(View view){
         Intent intent = new Intent(User_Account.this, Players.class);
         Bundle b = new Bundle();
-        b.putInt("Position", 4);
+        b.putInt("Position", 2);
         b.putInt("ActivityIdentity", 101);
         intent.putExtras(b);
         startActivityForResult(intent, 4);
@@ -299,7 +299,7 @@ public class User_Account extends AppCompatActivity {
     public void wr2(View view){
         Intent intent = new Intent(User_Account.this, Players.class);
         Bundle b = new Bundle();
-        b.putInt("Position", 5);
+        b.putInt("Position", 2);
         b.putInt("ActivityIdentity", 101);
         intent.putExtras(b);
         startActivityForResult(intent, 5);
@@ -307,7 +307,7 @@ public class User_Account extends AppCompatActivity {
     public void te(View view){
         Intent intent = new Intent(User_Account.this, Players.class);
         Bundle b = new Bundle();
-        b.putInt("Position", 6);
+        b.putInt("Position", 3);
         b.putInt("ActivityIdentity", 101);
         intent.putExtras(b);
         startActivityForResult(intent, 6);
@@ -315,7 +315,7 @@ public class User_Account extends AppCompatActivity {
     public void defense(View view){
         Intent intent = new Intent(User_Account.this, Players.class);
         Bundle b = new Bundle();
-        b.putInt("Position", 7);
+        b.putInt("Position", 4);
         b.putInt("ActivityIdentity", 101);
         intent.putExtras(b);
         startActivityForResult(intent, 7);
@@ -323,10 +323,10 @@ public class User_Account extends AppCompatActivity {
     public void flex(View view){
         Intent intent = new Intent(User_Account.this, Players.class);
         Bundle b = new Bundle();
-        b.putInt("Position", 8);
+        b.putInt("Position", 5);
         b.putInt("ActivityIdentity", 101);
         intent.putExtras(b);
-        startActivityForResult(intent, 7);
+        startActivityForResult(intent, 8);
     }
 
     public void optimize(View view){

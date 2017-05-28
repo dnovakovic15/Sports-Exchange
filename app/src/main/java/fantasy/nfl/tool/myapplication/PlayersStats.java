@@ -53,11 +53,11 @@ public class PlayersStats extends MainActivity {
         }
 
         //Maps the position integer, received from the Players Intent, and maps it to the corresponding SQL database name for each position.
-        positionMap.add("pg");
-        positionMap.add("sg");
-        positionMap.add("sf");
-        positionMap.add("pf");
-        positionMap.add("c");
+        positionMap.add("qb");
+        positionMap.add("rb");
+        positionMap.add("wr");
+        positionMap.add("te");
+        positionMap.add("d");
 
         try {
             finalStats = stats.execute(split[0], split[1], opponent, TokenSaver.getToken(getApplicationContext())).get();

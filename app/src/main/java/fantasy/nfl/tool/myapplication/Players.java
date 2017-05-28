@@ -35,39 +35,30 @@ public class Players extends AppCompatActivity {
         int position = myIntent.getIntExtra("Position", 0);
         activityIdentity = myIntent.getIntExtra("ActivityIdentity", 0);
         TextView playersPosition  = (TextView) findViewById(R.id.textView2);
-        System.out.println("Position: " + position);
 
         switch (position) {
             case (0): {
-                playersPosition.setText("Point Guards");
+                playersPosition.setText("Quarterbacks");
                 break;
             }
             case (1): {
-                playersPosition.setText("Shooting Guards");
+                playersPosition.setText("Running Backs");
                 break;
             }
             case (2): {
-                playersPosition.setText("Small Forwards");
+                playersPosition.setText("Wide Recievers");
                 break;
             }
             case (3): {
-                playersPosition.setText("Power Forwards");
+                playersPosition.setText("Tight Ends");
                 break;
             }
             case (4): {
-                playersPosition.setText("Centers");
+                playersPosition.setText("Defense");
                 break;
             }
             case (5): {
-                playersPosition.setText("Guards");
-                break;
-            }
-            case (6): {
-                playersPosition.setText("Forwards");
-                break;
-            }
-            case (7): {
-                playersPosition.setText("Utility");
+                playersPosition.setText("Flex");
                 break;
             }
         }
@@ -179,36 +170,19 @@ public class Players extends AppCompatActivity {
         }
     }
 
+    //Maps flex player positions to their actual position.
     public int assignPosition(String position, int multiplePosition) {
         if (multiplePosition == 5) {
-            if (position.indexOf("PG") > -1) {
-                return 0;
-            } else {
-                return 1;
-            }
-        }
-        else if (multiplePosition == 6) {
-            if (position.indexOf("SG") > -1) {
-                return 1;
-            }
-            else if (position.indexOf("SF") > -1) {
-                return 2;
-            }
-            else{
-                return 3;
-            }
-        }
-        else if (multiplePosition == 7) {
-            if (position.indexOf("PG") > -1) {
+            if (position.indexOf("QB") > -1) {
                 return 0;
             }
-            else if (position.indexOf("SG") > -1) {
+            else if (position.indexOf("RB") > -1) {
                 return 1;
             }
-            else if (position.indexOf("SF") > -1) {
+            else if (position.indexOf("WR") > -1) {
                 return 2;
             }
-            else if (position.indexOf("PF") > -1) {
+            else if (position.indexOf("TE") > -1) {
                 return 3;
             }
             else{
