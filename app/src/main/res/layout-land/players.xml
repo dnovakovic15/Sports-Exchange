@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.nba.darko.myapplication.fantasy.nba.darko.myapplication.MainActivity"
+    android:layout_alignParentTop="false"
+    android:layout_alignParentStart="false"
+    android:layout_alignParentRight="false"
+    android:layout_alignParentLeft="false"
+    android:background="@color/colorPrimary">
+
+    <ScrollView
+        android:id="@+id/scroll_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/AdvancedCatalogContainer"
+            android:layout_alignParentLeft="true"
+            android:layout_weight=".15"
+            android:layout_width="match_parent">
+
+
+            <TextView
+                android:text="Point Guards"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:gravity="center"
+                android:id="@+id/textView2"
+                android:textSize="36sp"
+                android:textStyle="normal|bold|italic"
+                android:background="@android:color/background_light"
+                android:textColor="@color/backColor" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_weight=".85"
+            android:layout_height="match_parent"
+            android:id="@+id/ppg">
+
+            <TextView
+                android:text="DK PPG"
+                android:layout_width="match_parent"
+                android:id="@+id/textView"
+                android:textSize="24sp"
+                android:layout_height="75dp"
+                android:elevation="1dp"
+                android:gravity="center"
+                android:textColor="@color/backColor"
+                android:textStyle="normal|bold|italic"
+                android:background="@android:color/background_light" />
+        </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

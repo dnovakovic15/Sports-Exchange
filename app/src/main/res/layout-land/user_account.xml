@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".45"
+            android:background="@color/backColor">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="229dp"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:text="Log Out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="37dp"
+                    android:id="@+id/button6"
+                    android:backgroundTint="@color/backColor"
+                    android:textColor="@android:color/white"
+                    android:onClick="logOut"/>
+
+                <TextView
+                    android:text="215 ppg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/ppg"
+                    android:layout_weight=".5"
+                    android:textSize="36sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    tools:textStyle="bold"
+                    android:paddingRight="30dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.09"
+                android:weightSum="1">
+
+                <Button
+                    android:text="Optimize"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/backColor"
+                    android:id="@+id/optimize"
+                    android:layout_weight="0.58"
+                    android:onClick="optimize"
+                    android:textColor="@android:color/background_light"
+                    android:layout_width="125dp"
+                    android:layout_gravity="right" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_weight="0.58"></LinearLayout>
+
+                <TextView
+                    android:text="Darko Novakovic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/username"
+                    android:gravity="bottom|right"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="4dp" />
+
+                <TextView
+                    android:text="dnovakovic21@yahoo.com"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    android:textColor="@android:color/white"
+                    android:gravity="bottom|right"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="5dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".3"
+            android:scrollbarAlwaysDrawVerticalTrack="false"
+            android:background="@color/colorPrimary">
+
+            <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button18"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button17"
+                android:layout_weight="1" />
+
+            <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button16"
+                android:layout_weight="1" />
+
+            <ScrollView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"
+                    android:background="@color/backColor">
+
+                    <TextView
+                        android:text="Remaining Salary: 50,000"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/salary"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="@android:color/background_light"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="5dp" />
+                </LinearLayout>
+
+                <Button
+                    android:text="Point Guard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:backgroundTint="#FFFFFF"
+                    android:id="@+id/button15"
+                    android:onClick="pg"
+                    android:textSize="9sp" />
+
+                <Button
+                    android:text="Shooting Guard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:backgroundTint="#FFFFFF"
+                    android:onClick="sg"
+                    android:id="@+id/button14"
+                    android:textSize="9sp" />
+
+                <Button
+                    android:text="Small Forward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:backgroundTint="#FFFFFF"
+                    android:onClick="sf"
+                    android:id="@+id/button13"
+                    android:textSize="9sp" />
+
+                <Button
+                    android:text="Power Forward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#FFFFFF"
+                    android:id="@+id/button12"
+                    android:onClick="pf"
+                    android:textSize="9sp" />
+
+                <Button
+                    android:text="Center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:backgroundTint="#FFFFFF"
+                    android:id="@+id/button11"
+                    android:onClick="c"
+                    android:textSize="9sp" />
+
+                <Button
+                    android:text="Guard"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:backgroundTint="#FFFFFF"
+                    android:id="@+id/button10"
+                    android:onClick="g"
+                    android:textSize="9sp" />
+
+                <Button
+                    android:text="Forward"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".1"
+                    android:backgroundTint="#FFFFFF"
+                    android:id="@+id/button9"
+                    android:onClick="f"
+                    android:textSize="9sp" />
+
+                <Button
+                    android:text="Utility"
+                    android:layout_width="match_parent"
+                    android:layout_weight=".1"
+                    android:backgroundTint="#FFFFFF"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button8"
+                    android:onClick="utility"
+                    android:textSize="9sp" />
+
+                <Button
+                    android:text="Enter Lineup"
+                    android:layout_width="match_parent"
+                    android:layout_weight=".05"
+                    android:backgroundTint="#66ff33"
+                    android:onClick="submit"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/submitLineup" />
+            </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

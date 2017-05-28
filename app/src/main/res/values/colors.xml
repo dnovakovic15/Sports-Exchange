@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#d9d9d9</color>
+    <color name="colorPrimaryDark">#303f9f</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="newColor">#d85c5c5f</color>
+    <color name="opponent">#92f8040d</color>
+    <color name="submit">#1bd230</color>
+    <color name="ButtonGrey">#505050</color>
+    <color name="backColor">#c00126fa</color>
+    <color name="SignIn">#07146a</color>
+</resources>

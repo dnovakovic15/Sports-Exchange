@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress ALL -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fantasy.nfl.tool.myapplication" >
+
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:icon="@drawable/ic_launcher">
+        <activity
+            android:name="fantasy.nfl.tool.myapplication.MainActivity"
+            android:theme="@style/Background">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="fantasy.nfl.tool.myapplication.Players"></activity>
+        <activity android:name="fantasy.nfl.tool.myapplication.UserPointGuards"></activity>
+        <activity android:name="fantasy.nfl.tool.myapplication.PlayersStats"></activity>
+        <activity android:name="fantasy.nfl.tool.myapplication.UserShootingGuards"></activity>
+        <activity android:name="fantasy.nfl.tool.myapplication.UserSmallForwards"></activity>
+        <activity android:name="fantasy.nfl.tool.myapplication.UserPowerForwards"></activity>
+        <activity android:name="fantasy.nfl.tool.myapplication.UserCenters"></activity>
+        <activity android:name="fantasy.nfl.tool.myapplication.User_Account"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/Background">
+        </activity>
+        <activity
+            android:name="fantasy.nfl.tool.myapplication.Signup_Activity"
+            android:theme="@style/Background">
+        </activity>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+</manifest>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.3">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="?android:attr/homeAsUpIndicator"
+            android:id="@+id/imageView2"
+            android:layout_weight=".3"
+            android:onClick="back"
+            android:background="@color/backColor" />
+
+        <TextView
+            android:text="Kevin Durant"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/Players"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="@android:color/background_light"
+            style="@style/Widget.AppCompat.TextView.SpinnerItem"
+            android:textStyle="normal|bold|italic"
+            android:layout_weight=".1"
+            android:textSize="30sp"
+            android:background="@color/backColor"
+            android:paddingEnd="0dp"
+            android:paddingStart="15dp" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:drawable/ic_input_add"
+            android:id="@+id/imageButton"
+            android:layout_weight=".28"
+            android:onClick="add"
+            android:background="@color/backColor" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight=".2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight=".35"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:text="Usage Rate % :"
+                android:textSize="20sp"
+                android:layout_width="fill_parent"
+                android:id="@+id/textView1"
+                android:textAlignment="center"
+                android:paddingTop="13dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".25"
+                android:textColor="@android:color/black"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="Offensive Reb. % :"
+                android:textSize="20sp"
+                android:layout_width="fill_parent"
+                android:id="@+id/textView2"
+                android:textAlignment="center"
+                android:paddingTop="13dp"
+                android:layout_weight=".25"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="0dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="Defensive Reb. % :"
+                android:textSize="20sp"
+                android:layout_width="fill_parent"
+                android:id="@+id/textView3"
+                android:textAlignment="center"
+                android:paddingTop="13dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".25"
+                android:textColor="@android:color/black"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="Assist % :"
+                android:textSize="20sp"
+                android:layout_width="fill_parent"
+                android:id="@+id/textView4"
+                android:textAlignment="center"
+                android:layout_weight=".25"
+                android:paddingTop="13dp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight=".15"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:text="30.5 %"
+                android:textSize="20sp"
+                android:layout_width="fill_parent"
+                android:id="@+id/textView11"
+                android:textAlignment="center"
+                android:paddingTop="13dp"
+                android:layout_marginTop="0dp"
+                android:textColor="@android:color/black"
+                android:layout_weight=".25"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="12.3 %"
+                android:textSize="20sp"
+                android:layout_width="fill_parent"
+                android:id="@+id/textView12"
+                android:textAlignment="center"
+                android:paddingTop="13dp"
+                android:textColor="@android:color/black"
+                android:layout_weight=".25"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="28.2 %"
+                android:textSize="20sp"
+                android:layout_width="fill_parent"
+                android:id="@+id/textView13"
+                android:textAlignment="center"
+                android:paddingTop="13dp"
+                android:layout_marginTop="0dp"
+                android:textColor="@android:color/black"
+                android:layout_weight=".25"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="7.4 %"
+                android:textSize="20sp"
+                android:layout_width="fill_parent"
+                android:id="@+id/textView14"
+                android:textAlignment="center"
+                android:paddingTop="13dp"
+                android:textColor="@android:color/black"
+                android:layout_weight=".25"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight=".3"
+        android:layout_height="match_parent">
+
+        <TextView
+        android:text="NBA"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/opponent"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:background="@color/backColor"
+        android:textColor="@android:color/background_light"
+        android:textStyle="normal|bold|italic"
+        android:layout_marginTop="0dp"
+        android:layout_weight=".3"
+        android:gravity="center" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight=".2"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight=".35"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:text="Opponent DVP :"
+                android:textSize="20sp"
+                android:layout_width="fill_parent"
+                android:id="@+id/textView20"
+                android:textAlignment="center"
+                android:paddingTop="13dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".25"
+                android:textColor="@android:color/black"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="Usage Rate %:"
+                android:textSize="20sp"
+                android:layout_width="fill_parent"
+                android:id="@+id/textView21"
+                android:textAlignment="center"
+                android:paddingTop="13dp"
+                android:layout_weight=".25"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="0dp"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="Offensive Reb. % :"
+                android:textSize="20sp"
+                android:layout_width="fill_parent"
+                android:id="@+id/textView22"
+                android:textAlignment="center"
+                android:paddingTop="13dp"
+                android:layout_marginTop="0dp"
+                android:layout_weight=".25"
+                android:textColor="@android:color/black"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="Defensive Reb. % :"
+                android:textSize="20sp"
+                android:layout_width="fill_parent"
+                android:id="@+id/textView23"
+                android:textAlignment="center"
+                android:layout_weight=".25"
+                android:paddingTop="13dp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="0dp"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight=".15"
+            android:layout_height="match_parent"
+            android:weightSum="1">
+
+            <TextView
+                android:text="30.5 %"
+                android:textSize="20sp"
+                android:layout_width="fill_parent"
+                android:id="@+id/textView27"
+                android:textAlignment="center"
+                android:paddingTop="13dp"
+                android:layout_marginTop="0dp"
+                android:textColor="@android:color/black"
+                android:layout_weight=".25"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="12.3 %"
+                android:textSize="20sp"
+                android:layout_width="fill_parent"
+                android:id="@+id/textView24"
+                android:textAlignment="center"
+                android:paddingTop="13dp"
+                android:textColor="@android:color/black"
+                android:layout_weight=".25"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="28.2 %"
+                android:textSize="20sp"
+                android:layout_width="fill_parent"
+                android:id="@+id/textView25"
+                android:textAlignment="center"
+                android:paddingTop="13dp"
+                android:layout_marginTop="0dp"
+                android:textColor="@android:color/black"
+                android:layout_weight=".25"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:text="7.4 %"
+                android:textSize="20sp"
+                android:layout_width="fill_parent"
+                android:id="@+id/textView26"
+                android:textAlignment="center"
+                android:paddingTop="13dp"
+                android:textColor="@android:color/black"
+                android:layout_weight=".25"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
