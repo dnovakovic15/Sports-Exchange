@@ -19,20 +19,20 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="fantasy.nfl.tool.myapplication.Players"></activity>
+        <activity android:name="fantasy.nfl.tool.myapplication.Views.Players"></activity>
         <activity android:name="fantasy.nfl.tool.myapplication.UserPointGuards"></activity>
-        <activity android:name="fantasy.nfl.tool.myapplication.PlayersStats"></activity>
-        <activity android:name="fantasy.nfl.tool.myapplication.UserShootingGuards"></activity>
-        <activity android:name="fantasy.nfl.tool.myapplication.UserSmallForwards"></activity>
-        <activity android:name="fantasy.nfl.tool.myapplication.UserPowerForwards"></activity>
-        <activity android:name="fantasy.nfl.tool.myapplication.UserCenters"></activity>
-        <activity android:name="fantasy.nfl.tool.myapplication.User_Account"></activity>
+        <activity android:name="fantasy.nfl.tool.myapplication.Views.PlayersStats"></activity>
+        <activity android:name="fantasy.nfl.tool.myapplication.Views.UserShootingGuards"></activity>
+        <activity android:name="fantasy.nfl.tool.myapplication.Views.UserSmallForwards"></activity>
+        <activity android:name="fantasy.nfl.tool.myapplication.Views.UserPowerForwards"></activity>
+        <activity android:name="fantasy.nfl.tool.myapplication.Views.UserCenters"></activity>
+        <activity android:name="fantasy.nfl.tool.myapplication.Views.User_Account"></activity>
         <activity
             android:name=".LoginActivity"
             android:theme="@style/Background">
         </activity>
         <activity
-            android:name="fantasy.nfl.tool.myapplication.Signup_Activity"
+            android:name="fantasy.nfl.tool.myapplication.Views.Signup_Activity"
             android:theme="@style/Background">
         </activity>
     </application>

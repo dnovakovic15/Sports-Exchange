@@ -9,7 +9,7 @@
     </style>
 
     <style name="Background" parent="AppTheme">
-        <item name="android:windowBackground">@drawable/background</item>
+        <item name="android:windowBackground">@drawable/gradient</item>
         <item name="android:textColorHint">@android:color/background_light</item>
     </style>
 

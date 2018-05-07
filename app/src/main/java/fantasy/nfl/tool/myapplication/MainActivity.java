@@ -1,6 +1,5 @@
 package fantasy.nfl.tool.myapplication;
 
-import android.app.ProgressDialog;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -10,7 +9,8 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import java.util.concurrent.ExecutionException;
+import fantasy.nfl.tool.myapplication.Views.Signup_Activity;
+import fantasy.nfl.tool.myapplication.Views.User_Account;
 
 /**
  * GUI for log in screen.
@@ -38,48 +38,50 @@ public class MainActivity extends AppCompatActivity {
 
         Log.d(TAG, "Login");
 
-        if (!validate()) {
-            onLoginFailed();
-            return;
-        }
+        onLoginSuccess("dnovakovic21@yahoo.com");
 
-        findViewById(R.id.btn_login).setEnabled(false);
+//        if (!validate()) {
+//            onLoginSuccess("dnovakovic21@yahoo.com");
+//            return;
+//        }
 
-        final ProgressDialog progressDialog = new ProgressDialog(MainActivity.this,
-                R.style.AppTheme);
-        progressDialog.setIndeterminate(true);
-        progressDialog.setMessage("Authenticating...");
-        progressDialog.show();
-
-        final String email = ((EditText)findViewById(R.id.input_email)).getText().toString();
-        final String password = ((EditText)findViewById(R.id.input_password)).getText().toString();
-
-        // TODO: Implement your own authentication logic here.
-
-        new android.os.Handler().postDelayed(
-                new Runnable() {
-                    public void run() {
-                        API_Log_in asyncTask1 = new API_Log_in();
-                        String verification = null;
-
-                        try {
-                            verification = asyncTask1.execute(email, password).get();
-                        } catch (InterruptedException e) {
-                            e.printStackTrace();
-                        } catch (ExecutionException e) {
-                            e.printStackTrace();
-                        }
-                        if(verification.indexOf("pass") > -1){
-                            TokenSaver.setToken(getApplicationContext(), verification.substring(8));
-                            System.out.println("Token: " + TokenSaver.getToken(getApplicationContext()));
-                            onLoginSuccess(email);
-                        }
-                        else{
-                            onLoginFailed();
-                        }
-                        progressDialog.dismiss();
-                    }
-                }, 300);
+//        findViewById(R.id.btn_login).setEnabled(false);
+//
+//        final ProgressDialog progressDialog = new ProgressDialog(MainActivity.this,
+//                R.style.AppTheme);
+//        progressDialog.setIndeterminate(true);
+//        progressDialog.setMessage("Authenticating...");
+//        progressDialog.show();
+//
+//        final String email = ((EditText)findViewById(R.id.input_email)).getText().toString();
+//        final String password = ((EditText)findViewById(R.id.input_password)).getText().toString();
+//
+//        // TODO: Implement your own authentication logic here.
+//
+//        new android.os.Handler().postDelayed(
+//                new Runnable() {
+//                    public void run() {
+//                        API_Log_in asyncTask1 = new API_Log_in();
+//                        String verification = null;
+//
+//                        try {
+//                            verification = asyncTask1.execute(email, password).get();
+//                        } catch (InterruptedException e) {
+//                            e.printStackTrace();
+//                        } catch (ExecutionException e) {
+//                            e.printStackTrace();
+//                        }
+//                        if(verification.indexOf("pass") > -1){
+//                            TokenSaver.setToken(getApplicationContext(), verification.substring(8));
+//                            System.out.println("Token: " + TokenSaver.getToken(getApplicationContext()));
+//                            onLoginSuccess(email);
+//                        }
+//                        else{
+//                            onLoginFailed();
+//                        }
+//                        progressDialog.dismiss();
+//                    }
+//                }, 300);
     }
 
 
@@ -102,6 +104,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onLoginSuccess(String email) {
+        System.out.println("WE JERE");
         findViewById(R.id.btn_login).setEnabled(true);
         Toast.makeText(getBaseContext(), "Log in Successful", Toast.LENGTH_LONG).show();
         Intent intent = new Intent(MainActivity.this, User_Account.class);
